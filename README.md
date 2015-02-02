@@ -1,6 +1,6 @@
 # Hostbase Ansible Inventory
 
-A dynamic inventory script for Ansible.
+A [dynamic inventory](http://docs.ansible.com/intro_dynamic_inventory.html) script for [Ansible](http://www.ansible.com).
 
 ## Requirements
 
@@ -45,3 +45,11 @@ Create `hostbase-cli.config.php` in your current directory, your home directory,
      --list (-l)           List hosts by group
      --limit (-i)          Maximum number of hosts (default: 10000)
      --list-groups (-g)    List groups
+     
+     
+## Reference
+
+### Ansible Docs
+* [Patterns](http://docs.ansible.com/intro_patterns.html)
+* [Developing Dynamic Inventory Sources](http://docs.ansible.com/developing_inventory.html)
+
