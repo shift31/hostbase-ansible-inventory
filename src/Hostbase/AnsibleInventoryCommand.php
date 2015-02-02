@@ -97,7 +97,7 @@ class AnsibleInventoryCommand extends Command
     public function fire()
     {
         if ($this->option('host')) {
-            $this->output($this->option('host'));
+            $this->showHost($this->option('host'));
         } else {
             $this->listHosts();
         }
@@ -107,7 +107,7 @@ class AnsibleInventoryCommand extends Command
     /**
      * @param string $fqdn
      */
-    protected function outputHost($fqdn)
+    protected function showHost($fqdn)
     {
         $host = $this->hbClient->show($fqdn);
         $this->output($host);
