@@ -7,11 +7,4 @@ require __DIR__.'/../src/vendor/autoload.php';
 
 $app = new AnsibleInventoryApplication('Hostbase Ansible Inventory', '0.1.0');
 
-
-// self-update
-$updateCommand = new KevinGH\Amend\Command('self-update');
-$updateCommand->setManifestUri('https://github.com/shift31/hostbase-ansible-inventory/raw/master/hostbase-ansible-manifest.json');
-$app->add($updateCommand);
-$app->getHelperSet()->set(new KevinGH\Amend\Helper);
-
 $app->run();

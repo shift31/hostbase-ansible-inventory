@@ -1,6 +1,6 @@
 # Hostbase Ansible Inventory
 
-_hostbase-ansible_ is a dynamic inventory script for Ansible.
+A dynamic inventory script for Ansible.
 
 ## Requirements
 
@@ -19,7 +19,7 @@ _hostbase-ansible_ is a dynamic inventory script for Ansible.
 
 ## Configuration
 
-Create hostbase-cli.config.php in your current directory, your home directory, or in /etc.
+Create `hostbase-cli.config.php` in your current directory, your home directory, or in /etc.
 
 'groups' should be an array of Hostbase host object key names to be used for grouping hosts together.
 

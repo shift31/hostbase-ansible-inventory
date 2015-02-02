@@ -116,6 +116,7 @@ class AnsibleInventoryCommand extends Command
 
     protected function listHosts()
     {
+        // an empty search will yield all hosts
         $hosts = $this->hbClient->search('', $this->option('limit'), true);
 
         $output = ['_meta' => ['hostvars' => []]];
@@ -138,9 +139,10 @@ class AnsibleInventoryCommand extends Command
             }
         }
 
+        // list groups, if requested
         if ($this->option('list-groups')) {
             $groups = array_keys($output);
-            unset($groups[0]);
+            unset($groups[0]); // remove _meta
             natsort($groups);
             foreach($groups as $group) {
                 $this->line($group);
