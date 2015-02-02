@@ -4,7 +4,8 @@ _hostbase-ansible_ is a dynamic inventory script for Ansible.
 
 ## Requirements
 
-PHP >= 5.4
+* [A Hostbase server](https://github.com/shift31/hostbase)
+* PHP >= 5.4
 
 ## Installation
 
@@ -22,14 +23,14 @@ Create hostbase-cli.config.php in your current directory, your home directory, o
 
 'groups' should be an array of Hostbase host object key names to be used for grouping hosts together.
 
-    ```php
-    <?php
-    
-     return [
-         'baseUrl' => 'http://your.hostbase.server',
-         'groups' => ['dataCenter', 'environment']
-     ];
-    ```
+```php
+<?php
+
+ return [
+     'baseUrl' => 'http://your.hostbase.server',
+     'groups' => ['dataCenter', 'environment']
+ ];
+```
 
 ## Usage
 `hostbase-ansible [-o|--host="..."] [-l|--list] [-i|--limit="..."] [-g|--list-groups]`
