@@ -1,0 +1,28 @@
+{
+  "name": "shift31/hostbase-ansible-inventory",
+  "description": "Hostbase-driven Dynamic inventory for Ansible",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Shift 31",
+      "email": "code@shift31.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "shift31/hostbase-api-client": "dev-develop",
+    "illuminate/console": "~4",
+    "kherge/amend": "3.*",
+    "illuminate/support": "~4"
+  },
+  "autoload": {
+    "psr-0": {
+      "Hostbase": "src/"
+    }
+  },
+  "config": {
+    "bin-dir": "bin",
+    "vendor-dir": "src/vendor"
+
+  }
+}

@@ -1,0 +1,6 @@
+vendor
+atlassian-ide-plugin.xml
+src/vendor
+bin/jsonlint
+bin/validate-json
+.idea
