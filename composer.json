@@ -10,7 +10,7 @@
   ],
   "require": {
     "php": ">=5.4",
-    "shift31/hostbase-api-client": "dev-develop",
+    "shift31/hostbase-api-client": "0.2.*",
     "illuminate/console": "~4",
     "illuminate/support": "~4"
   },
